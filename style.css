@@ -130,6 +130,9 @@ body{
 
 .home-img img{
     width: 100%;
+    border-radius: 50px;
+    max-width:1000px;
+    max-height:550px;
 }
 
 @media (max-width:785px) {
