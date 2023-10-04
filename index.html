@@ -31,11 +31,75 @@
                 <h4 class="text-h4">Welcome FooD PeeK</h4>
                 <h1 class="text-h1">Different spice for different tastes</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error veniam in voluptatem magni quisquam</p>
-                <a href="#" class="home-btn">Order yours</a>
+                <!-- <a href="#" class="home-btn">Download do CV</a>
+                <a href="#" class="home-btn">Contato</a> -->
+                <div class="btn-container-section-one">
+                    <button class="btn btn-color-1-section" onclick="window.open('./assets/resume-example.pdf')">
+                        Download CV
+                    </button>
+                    <button class="btn btn-color-2-section" onclick="location.href='#'">
+                        Contato
+                    </button>
+                </div>
+                <div id="socials-container">
+                    <img
+                      src="./img/linkedin.png"
+                      alt="My LinkedIn profile"
+                      class="icon"
+                      onclick="location.href='https://linkedin.com/'"
+                    />
+                    <img
+                      src="./img/github.png"
+                      alt="My Github profile"
+                      class="icon"
+                      onclick="location.href='https://github.com/'"
+                    />
+                </div>
             </div>
             <div class="home-img">
                 <img src="/img/ft_perfil.jpeg" alt="hamburguer">
             </div>
+        </section>
+        <section id="about">
+            <h1 class="title">About me</h1>
+            <div class="section-container">
+                <div class="section-container-pic">
+                    <img src="./img/homem-no-computador.png" alt="Homem no computador" class="about-pic">
+                </div>
+                <div class="about-details-container">
+                    <div class="about-container">
+                        <div class="details-container">
+                            <img
+                              src="./img/experience.png"
+                              alt="Experience icon"
+                              class="icon"
+                            />
+                            <h3>Experience</h3>
+                            <p>2 years <br />Web Development</p>
+                        </div>
+                        <div class="details-container">
+                            <img
+                              src="./img/education.png"
+                              alt="Education icon"
+                              class="icon"
+                            />
+                            <h3>Education</h3>
+                            <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
+                          reprehenderit et laborum, rem, dolore eum quod voluptate
+                          exercitationem nobis, nihil esse debitis maxime facere minus sint
+                          delectus velit in eos quo officiis explicabo deleniti dignissimos.
+                          Eligendi illum libero dolorum cum laboriosam corrupti quidem,
+                          reiciendis ea magnam? Nulla, impedit fuga!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <img src="./img/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
         </section>
     </main>
     <script src="script.js"></script>
