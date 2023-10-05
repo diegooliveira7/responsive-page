@@ -9,6 +9,12 @@
     text-decoration: none;
 }
 
+/*
+html, body {
+    overflow-x: hidden;
+}
+*/
+
 :root{ /*Cria variáveis para serem usadas no próprio arquivo*/
     --red:#d63a25;
     --white:#fff;
@@ -199,7 +205,7 @@ body{
 
 #about {
     padding-top: 4vh;
-    height: 130vh;
+    height: 90vh;
     margin: 0 7rem;
 }
 
@@ -255,8 +261,66 @@ body{
 
 .arrow {
   position: absolute;
-  right: -5rem;
+  right: 1.5rem;
   bottom: 2.5rem;
+}
+
+/*Projects*/
+
+#projects {
+    margin: 0 15rem;
+}
+
+.experience-detail-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.details-container-project {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}
+
+.project {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+
+.project-img {
+    border-radius: 2rem;
+    width: 80%;
+    height: 80%;
+}
+
+.experience-detail-container-project {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    /*
+    margin: 1rem;
+    color: black;*/
+}
+
+.btn-container-project {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn-project {
+    color: black;
+    border-color: rgb(163, 163, 163);
 }
 
 @media (max-width:785px) {
