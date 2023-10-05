@@ -1,23 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,600;1,100;1,200;1,900&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,600;1,100;1,200;1,900&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Poppins:ital,wght@0,200;0,600;1,100;1,200;1,900&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Poppins, sans-serif;
+    font-family: Oswald, sans-serif;
     list-style: none;
     text-decoration: none;
 }
 
 :root{ /*Cria variáveis para serem usadas no próprio arquivo*/
-    --red:#d63a25;
+    --green:#0dac6f;
     --white:#fff;
     --dark:#1e1c2a;
+    --grey: #f2f2f2;
 }
 
 body{
     color: var(--dark);
-    background: var(--white);
+    background: var(--grey);
 }
 
 a {
@@ -27,7 +29,7 @@ a {
 }
 
 a:hover {
-    color: grey;
+    color: #0dac6f;
     text-decoration: underline;
     text-underline-offset: 1rem;
     text-decoration-color: rgb(181, 181, 181);
@@ -40,13 +42,13 @@ a:hover {
     padding: 18px 40px;
     box-shadow: 0 0.1rem 0.5rem #ccc; /*Sombra na barra*/
     width: 100%;
-    background: var(--white);
+    background: var(--grey);
     transition: all 0.5s;
     position: fixed; /*Para ficar fixo a barra em cima*/
 }
 
 .navigation .logo{
-    color: var(--red);
+    color: var(--green);
     font-size: 1.7rem;
     font-weight: 600;
 }
@@ -69,7 +71,7 @@ a:hover {
 }
 
 .navigation ul li a:hover{ /*Ele que muda a cor da letra quando passa o mouse*/
-    color: var(--red);
+    color: var(--green);
 }
 
 .navigation i{
@@ -94,7 +96,7 @@ a:hover {
 
 .menu .bar:nth-child(1), /*Serve para estilizar a cor das 3 barrinhas*/
 .menu .bar:nth-child(3){
-    background: var(--red);
+    background: var(--green);
 }
 
 /*Configuração do main*/
@@ -114,7 +116,7 @@ a:hover {
 
 .home-text .text-h4{
     font-size: 1.5rem;
-    color: var(--red);
+    color: var(--green);
     margin-bottom: 1rem;
 }
 
@@ -130,8 +132,8 @@ a:hover {
 
 .home-btn{
     padding: 15px 45px;
-    background: var(--red);
-    color: var(--white);
+    background: var(--green);
+    color: var(--grey);
     border-radius: 10px;
     font-weight: 700;
     transition: all 0.5s;
@@ -193,7 +195,7 @@ a:hover {
 .btn-color-2-section,
 .btn-color-1-section:hover {
   background: rgb(0, 0, 0);
-  color: white;
+  color: var(--grey);
 }
 
 .btn-color-1-section:hover {
@@ -201,11 +203,15 @@ a:hover {
 }
 
 .btn-color-2-section:hover {
-    border: rgb(255, 255, 255) 0.1rem solid;
+    border: var(--grey) 0.1rem solid;
 }
 
 .btn-color-1-section {
     background: none;
+}
+
+.span-color {
+    color: var(--green);
 }
 
 /*About Section*/
@@ -245,7 +251,7 @@ a:hover {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: white;
+  background: var(--grey);
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
@@ -290,7 +296,7 @@ a:hover {
 .details-container-project {
     padding: 1.5rem;
     flex: 1;
-    background: white;
+    background: var(--grey);
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
@@ -392,7 +398,7 @@ a:hover {
         width: 100%;
         height: 100%;
         flex-direction: column;
-        background: var(--white);
+        background: var(--grey);
         gap: -10px;
         transition: 0.3s;
     }
