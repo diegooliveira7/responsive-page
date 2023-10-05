@@ -45,6 +45,7 @@ a:hover {
     background: var(--grey);
     transition: all 0.5s;
     position: fixed; /*Para ficar fixo a barra em cima*/
+    z-index: 1; /*Corrige o bug da sobreposição da home*/
 }
 
 .navigation .logo{
@@ -102,6 +103,7 @@ a:hover {
 /*Configuração do main*/
 
 .home{
+    animation: boot .7s forwards;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -124,6 +126,13 @@ a:hover {
     font-size: 4rem;
     margin-bottom: 1rem;
     line-height: 4rem;
+}
+
+.text-h1::after {
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .5s infinite;
 }
 
 .home-text p{
@@ -369,6 +378,30 @@ a:hover {
     cursor: default;
 }
 
+/*efeito de que está surgindo o texto em tela*/
+@keyframes boot {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+/*efeito de que está digitando*/
+@keyframes pisca {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+
 @media (max-width:785px) {
     .navigation{
         padding: 18px 20px;
@@ -414,6 +447,7 @@ a:hover {
 
     /*main*/
     .home{
+        animation: boot .7s forwards;
         padding: 100px 2%;
         flex-direction: column;
         text-align: center;
