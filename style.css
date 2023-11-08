@@ -351,7 +351,7 @@ a:hover {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
+    height: 80vh;
 }
 
 .contact-info {
@@ -376,6 +376,14 @@ a:hover {
 .email-icon {
     height: 2.5rem;
     cursor: default;
+}
+
+.footer {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 20px;
+    border-top: solid 1px #b4b4b4;
 }
 
 /*efeito de que está surgindo o texto em tela*/
