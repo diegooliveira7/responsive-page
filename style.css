@@ -475,6 +475,21 @@ a:hover {
     .home-img{
         width: 125%;
     }
+
+    /*projects*/
+
+    .projects{
+        animation: boot .7s forwards;
+        padding: 100px 2%;
+        flex-direction: column;
+        text-align: center;
+        overflow: hidden;
+        gap: 5rem;
+    }
+
+    .about-container{
+        wit
+    }
 }
 
 
