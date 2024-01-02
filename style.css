@@ -474,21 +474,28 @@ a:hover {
     }
     .home-img{
         width: 125%;
+    }    
+}
+
+@media (max-width: 1080px) {
+
+    #projects {
+        /* margin: 0 3rem; */
+        max-width: 1200px;
+        margin: 0 auto 120px auto;
+        padding: 20px;
     }
 
-    /*projects*/
-
-    .projects{
+    .details-container-project {
         animation: boot .7s forwards;
-        padding: 100px 2%;
-        flex-direction: column;
-        text-align: center;
-        overflow: hidden;
-        gap: 5rem;
+        position: relative;
+        padding: 5.5rem;
+        flex: 1;
+        border-radius: 0.5rem;
     }
 
-    .about-container{
-        wit
+    #projects h1 {
+        margin-bottom: 10px;
     }
 }
 
