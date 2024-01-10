@@ -500,6 +500,11 @@ a:hover {
 }
 
 @media (max-width: 740px) {
+    
+    section {
+        width: 400px;   
+    } 
+    
     #home {
         flex-direction: column;
         /* height: 80vh;
@@ -516,6 +521,7 @@ a:hover {
         padding: 20% 10%;
         display: grid;
         height: 100px;
+        width: 400px;
     }
 
     .home-img {
@@ -524,6 +530,31 @@ a:hover {
         transition: all 0.5s; */
         display: none;
     }
+
+    .section-container-pic {
+        display: none;
+        width: 0px;
+    }
+
+    #about {
+        padding-top: 30vh;
+    }
+
+
+    .text-container {
+        text-align: justify;
+    }
+
+    #projects {
+        padding-bottom: 1vh;
+    }
+
+    #contact {
+        margin: auto;
+        padding-top: 0vh;
+        height: 60vh;
+    }
+
 }
 
 
