@@ -479,13 +479,6 @@ a:hover {
 
 @media (max-width: 1080px) {
 
-    #projects {
-        /* margin: 0 3rem; */
-        max-width: 1200px;
-        margin: 0 auto 120px auto;
-        padding: 20px;
-    }
-
     .details-container-project {
         animation: boot .7s forwards;
         position: relative;
@@ -518,7 +511,7 @@ a:hover {
         align-items: center;
         justify-content: space-between;
         padding: 20% 10%; Importante para mexer na foto*/
-        padding: 20% 10%;
+        padding: 25% 10%;
         display: grid;
         height: 100px;
         width: 400px;
@@ -545,8 +538,36 @@ a:hover {
         text-align: justify;
     }
 
-    #projects {
+    /* #projects {
         padding-bottom: 1vh;
+    } */
+
+    ul {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+    }
+
+    li {
+        display: list-item;
+        text-align: -webkit-match-parent;
+    }
+
+    .experience-detail-container {
+        position: relative;
+    }
+
+    #projects {
+        margin: 0 auto 120px auto;
+        padding: 20px;
+        width: auto;
+    }
+
+    #projects .about-container {
+        display: flex;
+        gap: 40px;
+        padding-bottom: 20px;
+        overflow-x: auto;
     }
 
     #contact {
