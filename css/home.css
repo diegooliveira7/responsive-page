@@ -58,3 +58,14 @@
     transition: all 0.5s;
 }
 
+#socials-container {
+    display: flex;
+    justify-content: left;
+    margin-top: 1.5rem;
+    gap: 1rem;
+}
+
+.btn-container-section-one {
+    margin-top: 0;
+}
+

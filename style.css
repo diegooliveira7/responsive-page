@@ -102,22 +102,9 @@ a:hover {
 
 /*Configuração do main*/
 
-#socials-container {
-    display: flex;
-    justify-content: left;
-    margin-top: 1.5rem;
-    gap: 1rem;
-}
-
 .icon {
     cursor: pointer;
     height: 2rem;
-}
-
-.btn-container {
-    display: flex;
-    justify-content: left;
-    gap: 1rem;
 }
 
 .btn {
