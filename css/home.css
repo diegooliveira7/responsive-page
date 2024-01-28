@@ -1,0 +1,60 @@
+
+#home{
+    animation: boot .7s forwards;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 10%;
+}
+
+.home-text{
+    max-width: 37rem;
+}
+
+.home-text .text-h4{
+    font-size: 1.5rem;
+    color: var(--green);
+    margin-bottom: 1rem;
+}
+
+.home-text .text-h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 4rem;
+}
+
+.text-h1::after {
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .5s infinite;
+}
+
+.home-text p{
+    margin-bottom: 2rem;
+}
+
+.home-btn{
+    padding: 15px 45px;
+    background: var(--green);
+    color: var(--grey);
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+
+.home-btn:hover{
+    background: #fc4c35;
+}
+
+.home-img img{
+    width: 100%;
+    border-radius: 50px;
+    max-width:1000px;
+    max-height:550px;
+    box-shadow: 5px 5px 37px 17px #c2bfbf;
+    transition: all 0.5s;
+}
+
