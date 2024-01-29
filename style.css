@@ -35,6 +35,12 @@ a:hover {
     text-decoration-color: rgb(181, 181, 181);
 }
 
+.title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
 .navigation{
     display: flex;
     align-items: center;

@@ -1,0 +1,26 @@
+
+#skills {
+    margin: 0 15rem;
+    padding-top: 15vh;
+    height: 80vh;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.skill {
+    padding: 2.5rem;
+    flex: 1;
+    border-radius: 1rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}
+
+.skills-img {
+    border-radius: 50%;
+    width: 15%;
+}
